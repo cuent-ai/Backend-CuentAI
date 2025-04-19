@@ -6,6 +6,7 @@ from drf_yasg import openapi
 
 from apps.users.views import LoginView, RegisterView
 
+
 schema_view = get_schema_view(
    openapi.Info(
       title="Documentación de API",
@@ -31,6 +32,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', LoginView.as_view(), name='login'),
     path('register/', RegisterView.as_view(), name='register'),
-    path('user/', include('apps.users.routers') )
+    path('user/', include('apps.users.routers') ),
+    path('cuentai/', include('apps.cuentai.routers') ),  
 
 ]

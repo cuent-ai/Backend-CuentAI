@@ -29,6 +29,7 @@ BASE_APPS = [
 #apss locales las que se crea
 LOCAL_APPS = [
    'apps.users',
+   'apps.cuentai',
 ]
 
 # librerias externas
